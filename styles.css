@@ -175,6 +175,7 @@ p {
 
 .software:hover {
     color: #b5c99a;
+    transition: 0.3s;
 }
 
 .top-container {
@@ -254,6 +255,13 @@ p {
     flex-direction: row;
     width: 156px;
     align-items: center;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.skill-icons:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
 }
 
 .music {
