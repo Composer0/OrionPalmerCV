@@ -238,6 +238,7 @@ p {
 
 .skill-container{
     margin-top: 1rem;
+    padding-left: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -246,7 +247,8 @@ p {
 .skill-icons {
     display: flex;
     flex-direction: row;
-    width: 150px;
+    width: 156px;
+    align-items: center;
 }
 
 .music {
@@ -312,10 +314,16 @@ margin-top: 100px;
 }
 
 .footer-link {
+    display: inline-block;
     color: #66bfbf;
     margin: auto 30px auto 30px;
     text-decoration: none;
     font-size: 2.5rem;
+    transition: 0.3s cubic-bezier(0.68, -0.52, 0.68, 0.52);
+}
+
+.footer-link:hover {
+    transform: translateY(-5px);
 }
 
 .copyright {
@@ -369,6 +377,7 @@ a:hover {
 
     .skill-container{
         margin-top: 1rem;
+        padding-left: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -377,7 +386,7 @@ a:hover {
     .skill-icons {
         display: flex;
         flex-direction: row;
-        width: 36px;
+        width: 68px;
     }
 
     .music {
