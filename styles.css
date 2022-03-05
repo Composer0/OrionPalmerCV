@@ -219,12 +219,12 @@ p {
       .coding {
         justify-content: center;
         width: 50%;
-        padding-left: 65px;
+        padding: 0 0 2rem 50px;
     }
     .music-notes {
         justify-content: center;
         width: 50%;
-        padding-right: 65px;
+        padding: 0 50px 2rem 0;
     }
       .technology {
           font-size: 2rem;
@@ -249,4 +249,11 @@ p {
         clear: left;
         padding-top: 5px;
     }
+      
+        .footer-link {
+        color: #66bfbf;
+        margin: auto 30px auto 30px;
+        text-decoration: none;
+        font-size: 2.23rem;
+    }  
   }
