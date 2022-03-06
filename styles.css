@@ -16,17 +16,154 @@
 
 body {
 }
-.constellation {
-    width: 115px;
-    position: fixed;
-    display: block;
-    justify-content: center;
-    left: 46%;
-    top: 46%;
-    opacity: 0.15;
-    z-index: -4;
-    display: none;
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    width: 100%;
 }
+h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 5.625rem;
+    color: #93b6b6;
+    line-height: 2;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    color: #66bfbf;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #b5c99a;
+    font-size: 2.125rem;
+}
+
+hr {
+    border-color: #b5c99a;
+    border-width: 5px;
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+    color: #66bfbf;
+    margin: 2rem;
+}
+
+.top-container {
+    background-color: #457789;
+    position: relative;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.middle-section {
+    background-image: linear-gradient(#457789, #296385);
+    margin: 0;
+}
+
+.contact-me-container {
+    background-image: linear-gradient(#143d55, #061c29);
+    margin: 0;
+}
+
+.portfolio-projects {
+    background-image: linear-gradient(#296385, #143d55);
+}
+
+.container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    margin: 1rem;
+    /* width instantly changes card shape if image size is the problem. not always necessary. */
+}
+
+.card-header {
+    height: 200px;
+}
+
+.card-header img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+
+.card-content {
+    background-color: #fff;
+    padding: 30px;
+    /* padding necessary to remove gray space. */
+}
+
+.card-title {
+    height: 20px;
+    /* closer to paragraph */
+    margin: 0;
+    /* closer to img */
+}
+
+.card-excerpt {
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.project {
+    display: flex;
+    /* puts author name beside img rather than underneath. Flex puts everything within the class horizontally aligned. */
+}
+
+.project-img {
+    border-radius: 50%;
+    /* makes circle for image */
+    overflow: hidden;
+    /* crops the image if the image is still showing. */
+    height: 40px;
+    width: 40px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    /* vertically align. Display has to be restated even if the parent is the same as well. A child must chose how to raise their children. */
+    justify-content: space-around;
+    /* creates gap between name and date. */
+    margin-left: 10px;
+    /* text away from image. */
+    width: 100px;
+}
+
+.project-info small {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.bottom-section {
+    margin: 0;
+    background-color: #061c29;
+    color: #eaf6f6;
+    padding-bottom: 50px;
+}
+
 .nav-btn {
     color:rgba(0, 0, 0, 0.986);
     border: none;
@@ -135,47 +272,27 @@ body {
     padding-left: 20px;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    width: 100%;
-}
-h1{
-    font-family: "Dancing Script", cursive;
-    font-size: 5.625rem;
-    color: #66BFBF;
-    line-height: 2;
-    margin-bottom: 0px;
-    margin-top: 0px;
+.profile {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
-h2 {
-    color: #66bfbf;
-    font-weight: normal;
-    font-size: 2.5rem;
+.profile-img {
 }
 
-h3 {
-    color: #b5c99a;
-    font-size: 2.125rem;
-}
-
-hr {
-    border-color: #b5c99a;
-    border-width: 5px;
-    border-style: none;
-    border-top-style: dotted;
-    width: 5%;
-}
-
-p {
-    font-size: 18px;
-    line-height: 2;
-    color: #66bfbf;
-    margin: 0;
+.constellation {
+    width: 115px;
+    position: fixed;
+    display: block;
+    justify-content: center;
+    left: 46%;
+    top: 46%;
+    opacity: 0.15;
+    z-index: -4;
+    display: none;
 }
 
 .pro {
@@ -195,41 +312,6 @@ p {
     transition: 0.3s;
 }
 
-.top-container {
-    background-color: #457789;
-    position: relative;
-    padding-top: 100px;
-    margin: 0;
-}
-
-.middle-section {
-    background-image: linear-gradient(#457789, #296385);
-    margin: 0;
-}
-
-.contact-me-container {
-    background-color: #296385;
-}
-
-.bottom-section {
-    margin: 0;
-    background-color: #296385;
-    color: #eaf6f6;
-    z-index:-1;
-    padding-bottom: 50px;
-}
-
-.profile {
-    margin: auto;
-    margin-bottom: 100px;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-img {
-}
-
 .skill-container {
     display: flex;
     flex-direction: column;
@@ -246,11 +328,8 @@ p {
     padding-right: 30px;
 }
 
-.educ-notes {
-    margin-top: 100px;
-    width: 25%;
-    float: right;
-    padding-left: 30px;
+.education-description {
+    margin: 0 25% 0 25%;
 }
 
 .skill-row { 
@@ -260,7 +339,8 @@ p {
 }
 
 .teaching {
-    width: 100%;
+    margin: 70px auto 80px;
+    width: 50%;
 }
 
 .aligned {
@@ -307,7 +387,7 @@ p {
     padding-top: 5px;
 }
 
-.contact-me {
+#contact-me {
     margin-top: 100px;
     width: 50%;
     margin: 70px auto 80px;
