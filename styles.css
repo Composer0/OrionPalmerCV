@@ -110,8 +110,8 @@ p {
 }
 
 .card-content {
-    background-color: #fff;
-    padding: 30px;
+    background-color: #061c29;
+    padding: 30px;;
     /* padding necessary to remove gray space. */
 }
 
@@ -125,6 +125,11 @@ p {
 .card-excerpt {
     color: #777;
     margin: 10px 0 20px;
+}
+
+.projects-by-me {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .project {
@@ -350,6 +355,7 @@ p {
 .technology {
     justify-content: space-between;
     text-align: center;
+    margin: 0;
 }
 .code-skill-description {
     text-align: center;
@@ -392,6 +398,7 @@ p {
     width: 50%;
     margin: 70px auto 80px;
 }
+
 .btn {
     margin: 30px auto 20px auto;
     background: #11cdd4;
@@ -432,7 +439,6 @@ p {
     margin-bottom: 50px;
     color: #b5c99a;
 }
-
 
 .space-the-button {
     margin-bottom: 50px;
