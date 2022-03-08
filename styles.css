@@ -111,7 +111,7 @@ p {
 
 .card-content {
     background-color: #061c29;
-    padding: 30px;;
+    padding-top: 30px;
     /* padding necessary to remove gray space. */
 }
 
@@ -124,7 +124,7 @@ p {
 
 .card-excerpt {
     color: #777;
-    margin: 10px 0 20px;
+    /* margin: 10px 0 20px; */
 }
 
 .projects-by-me {
