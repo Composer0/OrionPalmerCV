@@ -96,35 +96,43 @@ p {
     overflow: hidden;
     width: 350px;
     margin: 1rem;
-    /* width instantly changes card shape if image size is the problem. not always necessary. */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card-header {
     height: 200px;
 }
 
+
 .card-header img {
     object-fit: cover;
     height: 100%;
-    width: 100%
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-header img:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card-content {
     background-color: #061c29;
     padding-top: 30px;
-    /* padding necessary to remove gray space. */
 }
 
 .card-title {
     height: 20px;
-    /* closer to paragraph */
     margin: 0;
-    /* closer to img */
 }
 
 .card-excerpt {
-    color: #777;
-    /* margin: 10px 0 20px; */
+    margin:2rem 2rem 1rem 2rem;
 }
 
 .projects-by-me {
@@ -134,14 +142,11 @@ p {
 
 .project {
     display: flex;
-    /* puts author name beside img rather than underneath. Flex puts everything within the class horizontally aligned. */
 }
 
 .project-img {
     border-radius: 50%;
-    /* makes circle for image */
     overflow: hidden;
-    /* crops the image if the image is still showing. */
     height: 40px;
     width: 40px;
 }
@@ -149,12 +154,10 @@ p {
 .project-info {
     display: flex;
     flex-direction: column;
-    /* vertically align. Display has to be restated even if the parent is the same as well. A child must chose how to raise their children. */
     justify-content: space-around;
-    /* creates gap between name and date. */
     margin-left: 10px;
-    /* text away from image. */
     width: 100px;
+    padding-bottom: 10px;
 }
 
 .project-info small {
@@ -352,11 +355,7 @@ p {
     display: flex;
     align-items: center;
 }
-/* .technology {
-    margin: 0;
-    justify-content: space-between;
-    text-align: center;
-} */
+
 .code-skill-description {
     margin: 0;
     text-align: center;
