@@ -32,3 +32,8 @@ $("#the-work").click(function(){   //id of the link which is being clicked
            scrollTop: $("#portfolio").offset().top   //id of div to be scrolled
     }, 1000);
 });
+$("#skills").click(function(){   //id of the link which is being clicked
+    $('html, body').animate({
+           scrollTop: $("#technology").offset().top   //id of div to be scrolled
+    }, 1000);
+});
