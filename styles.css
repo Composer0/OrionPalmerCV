@@ -528,18 +528,28 @@ a:hover {
     }
 
     h1 {
-        font-size: 3.1rem;
+        font-size: 2.7rem;
     }
     
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .software, .pro {
         font-size: 1.2rem;
     }
+
+    .education-description {
+        margin: 15%;
+    }
     
     .skill-icons {
         width: 62px;
+    }
+
+    #contact-me {
+        margin-top: 100px;
+        width: 70%;
+        margin: 70px auto 80px;
     }
 }
