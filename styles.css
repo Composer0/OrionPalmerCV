@@ -338,9 +338,9 @@ p {
 }
 
 .skill-row { 
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
+    width: 70%;
+    margin: 100px auto 100px;
+    text-align: center;
 }
 
 .teaching {
@@ -352,12 +352,13 @@ p {
     display: flex;
     align-items: center;
 }
-.technology {
+/* .technology {
+    margin: 0;
     justify-content: space-between;
     text-align: center;
-    margin: 0;
-}
+} */
 .code-skill-description {
+    margin: 0;
     text-align: center;
     padding: 5px 0;
     justify-content: space-between;
@@ -502,20 +503,9 @@ a:hover {
     .software, .pro {
         font-size: 2.1rem;
     }
-    
-    .educ-notes {
-        justify-content: center;
-        width: 50%;
-        padding: 0 80px 2rem 0;
-    }
 
     .skill-icons {
         width: 90px;
-    }
-
-    .educ {
-        padding-top: 4rem;
-        text-align: center;
     }
 
     .education-description {
@@ -548,12 +538,6 @@ a:hover {
 
     .software, .pro {
         font-size: 1.2rem;
-    }
-
-    .educ-notes {
-        justify-content: center;
-        width: 50%;
-        padding: 0 50px 2rem 0;
     }
     
     .skill-icons {
