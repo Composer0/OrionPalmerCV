@@ -153,11 +153,10 @@ p {
 
 .project-info {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 10px;
-    width: 100px;
-    padding-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 50px;
+    padding-bottom: 20px;
 }
 
 .project-info small {
@@ -286,9 +285,6 @@ p {
     width: 50%;
     align-items: center;
     justify-content: center;
-}
-
-.profile-img {
 }
 
 .constellation {
@@ -452,6 +448,7 @@ p {
     display: inline-block;
     color: #66bfbf;
     margin: auto 30px auto 30px;
+    justify-content: center;
     text-decoration: none;
     font-size: 2.5rem;
     transition: 0.3s cubic-bezier(0.68, -0.52, 0.68, 0.52);
