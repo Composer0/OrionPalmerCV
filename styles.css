@@ -214,6 +214,10 @@ p {
     transform: translateX(0);
 }
 
+#entireproject.visible {
+    transform: translateX(-100%)
+}
+
 .nav.open-btn.visible {
     opacity: 0;
 }
@@ -300,14 +304,12 @@ p {
 }
 
 .pro {
-    text-decoration: underline;
     color: #b5c99a;
     transition: transform .3s ease-out;
     display: inline-block;
 }
 
 .pro:hover {
-    transform: translateY(-20px);
     transition: 0.3s cubic-bezier(0.68, -0.52, 0.68, 0.52);
 }
 
