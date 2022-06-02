@@ -14,8 +14,28 @@
     font-family: "Merriweather", sans-serif;
 }
 
-body {
-}
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px !important;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(#457789, #143d55) !important;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #93b6b6 !important;
+    border: 1px solid #061c29 !important;
+    border-radius: 7px !important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #807cb5 !important;
+    border: 1px solid rgb(30, 9, 148) !important;
+  }
 
 body {
     margin: 0;
@@ -95,6 +115,7 @@ p {
     border-radius: 10px;
     overflow: hidden;
     width: 350px;
+    height: auto;
     margin: 1rem;
     transition: transform 0.3s ease-in-out;
 }
@@ -132,7 +153,8 @@ p {
 }
 
 .card-excerpt {
-    margin:2rem 2rem 1rem 2rem;
+    margin: auto 2rem;
+    height: 355px;
 }
 
 .projects-by-me {
@@ -507,6 +529,9 @@ a:hover {
     }
 }
 @media (max-width: 800px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
     .constellation {
         width: 100px;
         left: 46%;
