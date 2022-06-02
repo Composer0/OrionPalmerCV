@@ -115,14 +115,16 @@ p {
     border-radius: 10px;
     overflow: hidden;
     width: 350px;
-    height: auto;
+    max-height: 450px;
     margin: 1rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 5.7s ease-in-out, max-height 0.7s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+    max-height: 1000px;
+    transition: transform 0.7s ease-in-out, max-height 0.7s ease-in-out;
+    z-index: 3;
 }
 
 .card-header {
@@ -134,12 +136,11 @@ p {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    transition: transform 0.3s ease-in-out;
 }
 
 .card-header img:hover {
     transform: scale(1.04);
-    transition: transform 0.3s ease-in-out;
+
 }
 
 .card-content {
@@ -154,7 +155,17 @@ p {
 
 .card-excerpt {
     margin: auto 2rem;
-    height: 355px;
+    max-height: 30px;
+    color: #66bfbf00;
+    transition: max-height 0.7s ease-in-out, color 0.7s ease-in-out; ;
+}
+
+.card-excerpt:hover {
+    transform: translateY(0);
+    max-height: 350px;
+    color: #66bfbf;
+    transition: max-height 0.7s ease-in-out, color 0.7s ease-in-out;
+    z-index: 2;
 }
 
 .projects-by-me {
@@ -177,8 +188,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0px 50px;
+    margin: 0px 0px;
     padding-bottom: 20px;
+    z-index: 1;
+    background-color: #061c29;
 }
 
 .project-info small {

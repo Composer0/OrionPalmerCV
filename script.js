@@ -43,3 +43,8 @@ $(".software").hover(function(){
     $('.software').css('color', '#b5c99a');
     $('.software').addClass('pro');
 })
+
+const card = document.querySelector(".card-excerpt")
+card.addEventListener("hover", (e) => {
+    
+})
