@@ -127,6 +127,13 @@ p {
     z-index: 3;
 }
 
+.card:focus {
+    transform: scale(1.02);
+    max-height: 1000px;
+    transition: transform 0.7s ease-in-out, max-height 0.7s ease-in-out;
+    z-index: 3;
+}
+
 .card-header {
     height: 200px;
 }
@@ -161,6 +168,14 @@ p {
 }
 
 .card-excerpt:hover {
+    transform: translateY(0);
+    max-height: 350px;
+    color: #66bfbf;
+    transition: max-height 0.7s ease-in-out, color 0.7s ease-in-out;
+    z-index: 2;
+}
+
+.card-excerpt:focus {
     transform: translateY(0);
     max-height: 350px;
     color: #66bfbf;
