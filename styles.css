@@ -82,25 +82,26 @@ p {
 }
 
 .top-container {
-    background-color: #457789;
+    background-color: #1C689A;
     position: relative;
     padding-top: 100px;
     margin: 0;
 }
 
 .middle-section {
-    background-image: linear-gradient(#457789, #296385);
-    margin: 0;
-}
-
-.contact-me-container {
-    background-image: linear-gradient(#143d55, #061c29);
+    background-image: linear-gradient(#1C689A, #14557a);
     margin: 0;
 }
 
 .portfolio-projects {
-    background-image: linear-gradient(#296385, #143d55);
+    background-image: linear-gradient(#14557a, #09293b);
 }
+
+.contact-me-container {
+    background-image: linear-gradient(#09293b, #061c29);
+    margin: 0;
+}
+
 
 .container {
     align-content: center;
@@ -125,7 +126,7 @@ p {
     transform: scale(1.02);
     max-height: 1000px;
     transition: transform 0.7s ease-in-out, max-height 0.7s ease-in-out;
-    z-index: 3;
+    z-index: 0;
 }
 
 .card-header {
@@ -167,7 +168,7 @@ p {
     max-height: 350px;
     color: #66bfbf;
     transition: max-height 0.7s ease-in-out, color 0.7s ease-in-out;
-    z-index: 2;
+    z-index: 0;
 }
 
 .projects-by-me {
@@ -192,7 +193,7 @@ p {
     justify-content: center;
     margin: 0px 0px;
     padding-bottom: 20px;
-    z-index: 1;
+    z-index: 0;
     background-color: #061c29;
 }
 
